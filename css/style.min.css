@@ -438,6 +438,12 @@ body, html {
 @media (max-width: 868px) {
   .index header img {
     height: auto;
+    width: 340px;
+  }
+}
+@media (max-width: 320px) {
+  .index header img {
+    height: auto;
     width: 90%;
   }
 }
