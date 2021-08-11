@@ -7,11 +7,11 @@
   <meta name="description" content="">
   <!-- Facebook -->
   <meta property="og:type" content="website"> <!-- 類型 -->
-  <meta property="og:title" content="VENUS管理系統 | 登入">
+  <meta property="og:title" content="VENUS System | Login">
   <meta property="og:description" content="">
   <meta property="og:image" content="img/FreePOS-Preview.jpg">
-  <meta property="og:site_name" content="VENUS管理系統">
-  <title>VENUS管理系統 | 登入</title>
+  <meta property="og:site_name" content="VENUS">
+  <title>VENUS System | Login</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <!-- <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any"> -->
@@ -32,32 +32,32 @@
   </header>
   <section class="login">
     <div class="title-wrap">
-      <h1>登入</h1>
+      <h1>Sign In</h1>
       <div class="lang-mobile">
-        <a class="active" href="">繁中</a>
+        <a class="" href="index.html">繁中</a>
         <a class="" href="">简中</a>
-        <a class="" href="en.html">EN</a>
+        <a class="active" href="">EN</a>
       </div>
     </div>
     <div class="info">
-      <div>還沒有帳號？<a href="">聯絡我們</a></div>
-      <div class="ver">目前版本 V3.00.00-20210618</div>
+      <div>No account?<a href="">Contact Us</a></div>
+      <div class="ver">Current Version V3.00.00-20210618</div>
     </div>
     <form>
-      <div class="input"><img src="img/people.svg" alt=""><input type="text" placeholder="帳號"></div>
-      <div class="input"><img src="img/password.svg" alt=""><input id="pw" type="password" placeholder="密碼"><img id="eye" class="eye" src="img/close-eye.svg" alt=""><img src="img/eye.svg" alt="" id="open-eye" class="eye hide"></div>
+      <div class="input"><img src="img/people.svg" alt=""><input type="text" placeholder="ID"></div>
+      <div class="input"><img src="img/password.svg" alt=""><input id="pw" type="password" placeholder="Password"><img id="eye" class="eye" src="img/close-eye.svg" alt=""><img src="img/eye.svg" alt="" id="open-eye" class="eye hide"></div>
       <div class="input" placeholder="門市">
         <img src="img/store.svg" alt="">
         <select class="store">
-          <option value="1" seleced="">門市</option>
+          <option value="1" seleced="">Store</option>
           <option value="2">0001 DEMO</option>
           <option value="3">0002 </option>
         </select>
       </div>
     </form>
     <div class="btn-wrap">
-      <div href="" class="blue-btn login-btn">登入</div>
-      <a href="" class="reset-btn">重置</a>
+      <div href="" class="blue-btn login-btn">Sign In</div>
+      <a href="" class="reset-btn">Reset</a>
     </div>
   </section>
   <footer>
@@ -65,17 +65,17 @@
       <img src="img/bottom-line.svg" alt="" class="line"><img src="img/bottom-logo.svg" alt="" class="bottom-logo"><img src="img/bottom-line.svg" alt="" class="line">
     </div>
     <ul>
-      <li>台北 +886-2-2783-9488</li>
-      <li>台中 +886-4-2233-6916</li>
-      <li>高雄 +886-7-556-2998</li>
-      <li>珠海 +86-756-3612999</li>
-      <li>上海 +86-21-54233301</li>
+      <li>Taipei +886-2-2783-9488</li>
+      <li>Taichung +886-4-2233-6916</li>
+      <li>Kaohsiung +886-7-556-2998</li>
+      <li>Zhuhai +86-756-3612999</li>
+      <li>Shanghai +86-21-54233301</li>
     </ul>
   </footer>
   <div class="error hide">
     <div class="block">
       <img src="img/error.svg" alt="">
-      <p>帳號或密碼輸入錯誤</p>
+      <p>invalid password or email</p>
       <div class="blue-btn error-btn">OK</div>
     </div>
   </div>
@@ -85,8 +85,9 @@
   $('.login-btn').click(() => {
     $('.error').removeClass('hide');
   });
-  $('.error-btn').click(() =>{
+  $('.error-btn').click(() => {
     $('.error').addClass('hide');
   });
 </script>
+
 </html>
