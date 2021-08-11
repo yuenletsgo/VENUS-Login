@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="page no-js" lang="ch-zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <!-- Facebook -->
+  <meta property="og:type" content="website"> <!-- 類型 -->
+  <meta property="og:title" content="VENUS管理系統 | 登入">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="img/FreePOS-Preview.jpg">
+  <meta property="og:site_name" content="VENUS管理系統">
+  <title>VENUS管理系統 | 登入</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <!-- <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any"> -->
+  <link rel="apple-touch-icon" href="apple-icon.png">
+  <link rel="manifest" href="favicon.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="page__body index" style="background-image: url(img/bg@2x.png);">
+  <header>
+    <img src="img/header-logo.svg" alt="">
+    <select class="lang">
+      <option value="en">English</option>
+      <option value="zh-tw" selected="">繁體中文</option>
+      <option value="zh-ch">简体中文</option>
+    </select>
+  </header>
+  <section class="login">
+    <div class="title-wrap">
+      <h1>登入</h1>
+      <div class="lang-mobile">
+        <a class="active" href="">繁中</a>
+        <a class="" href="">简中</a>
+        <a class="" href="">EN</a>
+      </div>
+    </div>
+    <div class="info">
+      <div>還沒有帳號？<a href="">聯絡我們</a></div>
+      <div class="ver">目前版本 V3.00.00-20210618</div>
+    </div>
+    <form>
+      <div class="input"><img src="img/people.svg" alt=""><input type="text" placeholder="帳號"></div>
+      <div class="input"><img src="img/password.svg" alt=""><input id="pw" type="password" placeholder="密碼"><img id="eye" class="eye" src="img/close-eye.svg" alt=""><img src="img/eye.svg" alt="" id="open-eye" class="eye hide"></div>
+      <div class="input" placeholder="門市">
+        <img src="img/store.svg" alt="">
+        <select class="store">
+          <option value="1" seleced="">門市</option>
+          <option value="2">0001 DEMO</option>
+          <option value="3">0002 </option>
+        </select>
+      </div>
+    </form>
+    <div class="btn-wrap">
+      <div href="" class="blue-btn login-btn">登入</div>
+      <a href="" class="reset-btn">重置</a>
+    </div>
+  </section>
+  <footer>
+    <div class="logo-wrap">
+      <img src="img/bottom-line.svg" alt="" class="line"><img src="img/bottom-logo.svg" alt="" class="bottom-logo"><img src="img/bottom-line.svg" alt="" class="line">
+    </div>
+    <ul>
+      <li>台北 +886-2-2783-9488</li>
+      <li>台中 +886-4-2233-6916</li>
+      <li>高雄 +886-7-556-2998</li>
+      <li>珠海 +86-756-3612999</li>
+      <li>上海 +86-21-54233301</li>
+    </ul>
+  </footer>
+  <div class="error hide">
+    <div class="block">
+      <img src="img/error.svg" alt="">
+      <p>帳號或密碼輸入錯誤</p>
+      <div class="blue-btn error-btn">OK</div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="js/script.min.js"></script>
+<script>
+  $('.login-btn').click(() => {
+    $('.error').removeClass('hide');
+  });
+  $('.error-btn').click(() =>{
+    $('.error').addClass('hide');
+  });
+</script>
+</html>
