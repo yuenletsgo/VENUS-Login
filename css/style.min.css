@@ -409,12 +409,9 @@ body, html {
   font-family: "Noto Sans TC", Arial, Helvetica, sans-serif;
 }
 
-.index {
-  max-width: 1800px;
-  margin: auto;
-}
 .index header {
   width: 100%;
+  max-width: 1800px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -714,6 +711,7 @@ body, html {
   display: none;
 }
 .index footer {
+  max-width: 1800px;
   margin-top: 71px;
 }
 .index footer .logo-wrap {
