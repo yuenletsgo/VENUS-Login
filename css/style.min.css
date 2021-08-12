@@ -417,25 +417,25 @@ body, html {
   align-items: center;
   padding: 60px 61px 41px 50px;
 }
-@media (max-width: 868px) {
+@media (max-width: 780px) {
   .index header {
     justify-content: center;
   }
 }
 @media (max-width: 1366px) {
   .index header {
-    padding: 72px 61px 40px 50px;
+    padding: 30px 61px 50px 30px;
   }
 }
-@media (max-width: 868px) {
+@media (max-width: 780px) {
   .index header {
-    padding: 72px 0px 40px 0px;
+    padding: 30px 37px 20px 37px;
   }
 }
 .index header img {
   height: 60px;
 }
-@media (max-width: 868px) {
+@media (max-width: 780px) {
   .index header img {
     height: auto;
     width: 340px;
@@ -462,7 +462,7 @@ body, html {
   text-align: left;
   color: rgba(61, 61, 61, 0.7);
 }
-@media (max-width: 868px) {
+@media (max-width: 780px) {
   .index header select {
     display: none;
   }
@@ -478,34 +478,36 @@ body, html {
 .index .login {
   min-width: 770px;
   max-width: 770px;
+  height: 470px;
   background-color: rgba(255, 255, 255, 0.6);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 6px;
-  padding: 91px 97px 90px 91px;
-}
-@media (max-width: 868px) {
-  .index .login {
-    min-width: 90%;
-    max-width: 90%;
-    border-radius: 15px;
-    padding: 28px 38px 38px 38px;
-  }
+  padding: 50px 97px 45px 97px;
 }
 @media (min-width: 1366px) {
   .index .login {
-    padding: 51px 97px 45px 97px;
+    padding: 40px 97px 45px 97px;
+  }
+}
+@media (max-width: 780px) {
+  .index .login {
+    min-width: 340px;
+    max-width: 340px;
+    border-radius: 15px;
+    padding: 40px 25px 38px 25px;
+    height: 490px;
   }
 }
 .index .login .title-wrap {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
-@media (max-width: 868px) {
+@media (max-width: 780px) {
   .index .login .title-wrap {
-    margin-bottom: 59px;
+    margin-bottom: 25px;
   }
 }
 .index .login .title-wrap a {
@@ -540,7 +542,7 @@ body, html {
 .index .login .lang-mobile {
   display: none;
 }
-@media (max-width: 868px) {
+@media (max-width: 780px) {
   .index .login .lang-mobile {
     display: flex;
   }
@@ -555,11 +557,11 @@ body, html {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 94px;
+  margin-bottom: 50px;
 }
-@media (min-width: 1366px) {
+@media (max-width: 780px) {
   .index .login .info {
-    margin-bottom: 49px;
+    margin-bottom: 15px;
   }
 }
 .index .login .info a {
@@ -573,7 +575,7 @@ body, html {
     font-size: 13px;
   }
 }
-@media (max-width: 868px) {
+@media (max-width: 780px) {
   .index .login .info {
     flex-direction: column;
     font-size: 14px;
@@ -594,7 +596,7 @@ body, html {
   align-items: center;
   margin-bottom: 16px;
 }
-@media (max-width: 868px) {
+@media (max-width: 780px) {
   .index .login .input {
     width: 100%;
   }
@@ -670,7 +672,7 @@ body, html {
   text-align: center;
   text-decoration: none;
 }
-@media (max-width: 868px) {
+@media (max-width: 780px) {
   .index .btn-wrap .blue-btn, .index .btn-wrap .reset-btn, .index .block .blue-btn, .index .block .reset-btn {
     width: 100%;
   }
@@ -683,7 +685,7 @@ body, html {
 .index .btn-wrap .reset-btn, .index .block .reset-btn {
   background: rgba(61, 61, 61, 0.7);
 }
-@media (max-width: 868px) {
+@media (max-width: 780px) {
   .index .btn-wrap .reset-btn, .index .block .reset-btn {
     margin-top: 15px;
   }
@@ -720,6 +722,11 @@ body, html {
   max-width: 1800px;
   margin-top: 71px;
 }
+@media (max-width: 780px) {
+  .index footer {
+    margin-top: 49px;
+  }
+}
 .index footer .logo-wrap {
   display: flex;
   align-items: center;
@@ -728,7 +735,7 @@ body, html {
 .index footer .logo-wrap .bottom-logo {
   margin: 0 25px;
 }
-@media (max-width: 868px) {
+@media (max-width: 780px) {
   .index footer .logo-wrap .line {
     display: none;
   }
@@ -747,19 +754,22 @@ body, html {
   margin-bottom: 20px;
   padding-left: 0;
 }
-@media (max-width: 868px) {
-  .index footer ul {
-    flex-direction: column;
-    text-align: center;
-  }
-}
 @media (min-width: 1366px) {
   .index footer ul {
     margin-bottom: 47px;
   }
 }
+@media (max-width: 780px) {
+  .index footer ul {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
 .index footer ul li {
   margin: 10px 12px;
+  color: white;
+  text-decoration: none;
 }
 
 .error {
